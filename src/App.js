@@ -1,13 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-
+import ChangeLang from './components/ChangeLang';
+import Demo from './components/DemoClass.jsx';
+import DemoFun from './components/DemoFun.jsx';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <ChangeLang/>
+      <Demo/>
+      <DemoFun hello="我是传参"></DemoFun>
+      <p>
+          编辑 <code>src/App.js</code> 保存刷新.
         </p>
         <a
           className="App-link"
@@ -15,9 +18,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          学习react
         </a>
-      </header>
     </div>
   );
 }
