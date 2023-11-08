@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import ChangeLang from './components/ChangeLang';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ChangeLang>
+      <App />
+    </ChangeLang>
+    
   </React.StrictMode>
 );
 
